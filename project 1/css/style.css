@@ -1,0 +1,94 @@
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  /*background:#f5f5f5;*/
+  /*background: rgb(245, 245, 245);*/
+  font-family: 'Open Sans', arial, sans-serif;  
+  /*font-size: 0.875rem;*/
+  color: rgb(86, 90, 92);
+/*  background: #ffd1dc;*/
+  background: -moz-linear-gradient(360deg,#bce0f3,#ffffff);  /*For Firefox 3.6 to 15 */
+  background: linear-gradient(360deg, #bce0f3,#ffffff); /* Standard syntax */
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container{
+	/*margin:0 auto;*/
+	text-align: center;
+	margin: 20px auto;
+}
+
+
+h1 {
+    font-size: 25px;
+    margin-top: 10px;
+    /*font-style: italic;*/
+    font-family: 'myFont','Georgia',/* 'Times New Roman',*/ serif;
+    text-align: center;
+}
+
+/*************************
+	SECTION: HEADER
+*************************/
+.header{
+	margin: 20px 0;
+	padding: 40px 0;
+}
+
+
+
+/*****************************
+	SECTION : DISPLAY
+*******************************/
+.photo .photo-box{
+	padding: 10px;
+}
+
+.photo .photo-box img{
+	width: 100%;
+}
+
+/****************************
+	MEDIA QUERIES
+********************************/
+
+@media only screen and (min-width: 500px){
+	body{
+		/*background-color: pink;*/
+	}
+
+	.photo .photo-box{
+		display: inline-block;
+		/*padding: 10px;*/
+	}
+
+	h1 {
+	    font-size: 44px;
+	}
+}
+@media only screen and (min-width: 1060px){
+	body{
+		/*background-color: #e6e6fa;*/
+	}
+
+	.container{
+		width: 1280px;
+	}
+
+	.photo .photo-box{
+		width: 30%;
+		padding: 25px;
+	}
+}
+
